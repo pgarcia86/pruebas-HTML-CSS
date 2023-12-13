@@ -1,0 +1,29 @@
+
+.flex {
+    display: flex;
+    height: 200px;
+    /* flex-direction: row;
+    flex-wrap: wrap; */
+    flex-flow: row wrap;
+    /* justify-content: space-evenly;
+    align-content: stretch; */
+}
+/*El orden del flexbox es como en los arrays, empieza en el cero*/
+ .primero {
+    /* order: 1; */
+    flex-grow: 1;   /*le permite a la celda crecer*/
+    flex-basis: 18px;   /*le da un valor inicial y despues lo reparte a los demas*/
+
+}
+
+.segundo {
+    /* order: 1; */
+    /* flex-grow: 1;
+    flex-basis: 18px; */
+    flex: 1 18px;   /*Es homologo al anterior*/
+    align-self: center;
+}
+
+.tercero {
+    flex-grow: 2;
+}
