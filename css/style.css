@@ -1,0 +1,179 @@
+#titulo { /*todos los id titulo tendran color azul*/
+    color: blue;
+}
+p.especial { /*todos los p que tengan la clase especial tendran tamaño large*/
+    font-size: large;
+}
+p.texto { /*todos los p con la clase texto tendrán color verde*/
+    color: green;
+}
+
+div p { /*todos los p dentro de un div, tendran color aquamarine*/
+    color:aquamarine;
+}
+
+div h2, div h3 { /*De esta manera, aplica el estilo solamente a los h2 y h3 que esten dentro de un div*/
+    color: brown;
+}
+
+/* * {
+    font-size: 50px;
+    color: black;
+} */
+
+.color {
+    color: #af9d84;
+    /* border: 5px black dashed; */
+                        /*dotted
+                        dashed
+                        solid
+                        double
+                        groove  3d
+                        ridge   3d
+                        inset   3d
+                        outset  3d
+                        none
+                        hidden
+                        */
+    border-style: solid;
+    border-color: blue;
+    border-radius: 5px;
+    border-width: 2rem;
+}
+
+#fondo {
+    background-color: rgba(255, 0, 0);
+    /* opacity: 0.1; */
+    height: 400px;
+    background: red url('https://placekitten.com/200/300') no-repeat center center /100px 100px;
+    /* background-size: 300px 300px; si utilizo background, debo poner background size despues de background */
+}
+
+.margen {
+    background-color: blue;
+    margin: 15px 200px 25px 30px;
+    padding: 35px 250px 20px 15px;
+    border: solid 3px black;
+    height: 200px;
+    width: 90px;
+    overflow: scroll;
+    outline: 3px solid red;
+}
+
+.text {
+    text-align: center;
+    text-decoration: overline;
+    text-shadow: 3px 5px 5px red;
+    font-family: 'Afacad', Arial, Helvetica, sans-serif;
+}
+
+/*ESTO VA EN ESTE ORDEN*/
+a:link {        /*Cuando el link no fue visitado*/
+    color: red;
+}
+
+a:visited {     /*Cuando el link fue visitado*/
+    color: green;
+}
+
+a:hover {       /*Cuando el mouse esta sobre el link*/
+    color: yellow;
+}
+
+a:active {      /*Cuando se esta haciendo click sobre el link*/
+    color: orange;
+}
+
+.lista {
+    background-color: cyan;
+    list-style-type: armenian;
+    padding-left: 30px;
+    /* list-style-position: inside; */
+}
+
+table {
+    width: 100%;
+    border-collapse:  collapse; /*Separacion entre celdas*/
+}
+
+th, td {
+    border: solid 2px #000;
+}
+
+th {
+    background-color: tomato;
+    color: white;
+    text-align: left;
+}
+
+tr:nth-child(even) {    /*Esto es para seleccionar algunas celdas en particular*/
+    background-color: #eee;
+}
+
+tr:hover {              /*funciona igual que con los links*/
+    background-color: #aaa;
+    cursor: pointer;
+}
+
+tr:active{
+    background-color: tomato;
+    cursor: cell;
+}
+
+span {
+    display: block;
+    /* display: none; */
+    /* visibility: hidden; */
+    max-width: 900px;   /*Es el ancho maximo pero depende del tamaño de la pantalla*/
+    /* width: 900px; */ /*Es el ancho, no depende del tamaño de la pantalla*/
+    background-color: red
+}
+
+.inline {
+    display: inline; /*No se puede editar el tamaño*/
+}
+
+#position {
+    position: sticky;   /*Fixed: le deja fijo mientras scroleo, Relative: su posicion es relativa*/
+    left: 20px;
+    top: 25px;
+} 
+
+.inline-block {
+    display: inline-block; /*Con inline block se puede dar tamaño a ese bloque*/
+    height: 55px;
+    background-color: red;
+}
+
+.center {
+    padding: 50px 0;
+    width: 200px;
+    margin: 0 auto;
+    background-color: blue;
+    text-align: center;
+}
+
+.left {
+    float: left;
+    width: 200px;
+    height: 300px;
+    background-color: blue;
+}
+
+.right {
+    float: right;
+}
+
+.container {
+    height: 200px;
+}
+
+.card {
+    border: solid 2px #ddd;
+    border-radius: 3px;
+    margin: 0 15px;
+    padding: 10px 10px;
+}
+
+
+

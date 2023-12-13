@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mi segunda pagina</title>
+    </head>
+    <body>
+        <h2>Formularios</h2>
+        <h3>Voy a crear un formulario con la etiqueta <b>"form"</b></h3>
+        <div>
+            Voy a usar las etiquetas: <br />
+            <ol>
+                <li><strong>"lengend"</strong> le da nombre al formulario</li>
+                <li><strong>"label"</strong> le da nombre al input siguiente</li>
+                <li><strong>"input"</strong> crea el input. Puede ser:
+                    <ol>
+                        <li style="list-style-type: lower-alpha;">number</li>
+                        <li style="list-style-type: lower-alpha;">password</li>
+                        <li style="list-style-type: lower-alpha;">text</li>
+                        <li style="list-style-type: lower-alpha;">submit - este es para enviar</li>
+                        <li style="list-style-type: lower-alpha;">email</li>
+                        <li style="list-style-type: lower-alpha;">radio</li>
+                        <li style="list-style-type: lower-alpha;">file</li>
+                        <li style="list-style-type: lower-alpha;">etc...</li>
+                    </ol>
+                </li>
+                <li><strong>"select"</strong> es para crear la caja de seleccion</li>
+                <li><strong>"option"</strong> combinado con select, le da el nombre a las opciones</li>
+                <li><strong>"textarea"</strong> crea un area de texto que se puede agrandar y achicar</li>
+                <li><strong>"button"</strong> crea un boton. Es equivalente a "input - submit"</li>
+                <li><strong>"placeholder"</strong> pone texto en gris dentro de la caja</li>
+                <li><strong>"img"</strong> para poner una imagen. Se usa con <b>"scr"</b> donde se pone el link de la imagen</li>
+                <li><strong>"a href="</strong> es para poner un link a una web</li>
+            </ol>
+        </div>
+        <form action="/formulario" method="POST">
+            <fieldset>
+                <legend><strong>Datos personales</strong></legend>
+                <label for="edad">Edad: </label>
+                <input id="edad" name="edad" type="number" placeholder="Ingrese su edad..."/><br />
+                <label for="password">Password: </label>
+                <input id="password" name="password" type="password" placeholder="Ingrese su password..."/><br />
+                <label for="nombre">Nombre: </label>
+                <input id="nombre" name="nombre" type="text" placeholder="Ingrese su nombre..."/><br />
+                <label for="personaje">Personaje: </label><select>
+                    <option id="personaje" name="personaje" value="goku">Goku</option>
+                    <option id="personaje" name="personaje" value="vegeta">Vegeta</option>
+                    <option id="personaje" name="personaje" value="gohan">Gohan</option>
+                </select><br />
+                <textarea cols="50" rows="10" id="comentario" name="comentario" placeholder="Ingrese su comentario..."></textarea><br />
+                <input type="submit" value="Aceptar"/>
+                <button type="reset">Este es un boton para resetear</button>
+                <button type="button">Este es un boton que no hace nada por ahora</button>
+                <button type="submit">Este es un boton equivalente a input submit</button>
+            </fieldset>
+        </form><br />
+        <img src="http://placekitten.com/200/200"/><br /><br />
+        <a target="_blank" href="http://placekitten.com/200/300"><b>Ir a buscar un gatito</b></a>
+    </body>
+</html>
