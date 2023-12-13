@@ -1,0 +1,37 @@
+body {
+    background-color: #efefef;
+}
+
+.grid {
+    display: grid;
+    grid-template-areas: "header header header"
+                         "sidebar content content"
+                         "sidebar footer footer";
+}
+
+.red {
+    font-size: 45px;
+    grid-area: header;
+    height: 50px;
+    background-color: red;
+}
+
+.blue {
+    grid-area: sidebar;
+    height: 625px;
+    background-color: blue;
+}
+
+.grey {
+    grid-area: content;
+    height: 600px;
+    background-color: grey;
+}
+
+.green {
+    grid-area: footer;
+    float: right;
+    margin-top: 0px;
+    height: 25px;
+    background-color: green;
+}

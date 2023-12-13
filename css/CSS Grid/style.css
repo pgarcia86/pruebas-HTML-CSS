@@ -1,0 +1,30 @@
+body {
+    background-color: #eee;
+}
+
+.grid {
+    height: 80px;
+    display: grid;
+    /* grid-template-rows: repeat(2, 50px);             /*Le doy el tamaño a las columnas y las filas*/
+    /* grid-template-columns: repeat(3, 100px); */
+    /* grid-template-columns: [col-1] 100px [col-2] 100px [col-3] 100px [col-4];   le doy un nombre y un tamaño a las filas y las columnas */
+    /* grid-template-rows: [row-1] 50px [row-2] 50px [row-3]; */
+    grid-template-rows: repeat(2, [row-inicio] 50px [row-fin]);
+    grid-template-columns: repeat(3, [col-inicio] 100px [col-fin]);
+    /* grid-row-gap: 50px;
+    grid-column-gap: 5px; */
+    grid-gap: 50px 5px;
+}
+
+.element {
+    background-color: red;
+}
+
+.header {
+    /* grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    grid-row-end: 3; */
+    grid-column: col-inicio / col-fin 3;     /*la clase header empieza en la columna de nombre col-1 y termina en col-4 y la fila en row-1 row-3*/
+    grid-row: row-inicio / row-fin 3;
+}
